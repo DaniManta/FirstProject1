@@ -1,10 +1,39 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View, Alert, borderWidth } from 'react-native';
+
+const Separator = () => (
+  <View style={styles.separator} />
+);
+
+
 
 export default function App() {
+  function Press(testID) {
+    var x = Math.floor((Math.random() + 3) + 1)
+    if (x == id) {
+      alert("Ai ghicit")
+    } else {
+      alert("Mai incearca")
+    }
+  }
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Button 
+        title="Button 1"
+        style={{borderWidth: 1}}
+        testID="1"
+        onPress={this.Press(testID)}
+      />
+      <View>
+        <Button
+        title="Button 2"
+        />
+      </View>
+      <View>
+        <Button
+        title="Button 3"
+        />
+      </View>
       <StatusBar style="auto" />
     </View>
   );
