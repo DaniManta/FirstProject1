@@ -8,9 +8,9 @@ const Separator = () => (
 
 
 export default function App() {
-  function Press(testID) {
+  function Press() {
     var x = Math.floor((Math.random() + 3) + 1)
-    if (x == id) {
+    if (x == testID) {
       alert("Ai ghicit")
     } else {
       alert("Mai incearca")
@@ -22,7 +22,7 @@ export default function App() {
         title="Button 1"
         style={{borderWidth: 1}}
         testID="1"
-        onPress={this.Press(testID)}
+        onPress={Press()}
       />
       <View>
         <Button
